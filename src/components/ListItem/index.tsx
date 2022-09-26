@@ -29,7 +29,7 @@ export const ListItem = ({ item }: Props ) => {
           onChange={(e) => setIsChecked(e.target.checked)}
           style={{ width: "25px", height: "25px", marginRight: "5px" }}
         />
-        <p style={{ margin: "0", color: "#ccc" }}>{item.name}</p>
+        <p style={{ margin: "0", color: "#ccc" }}>{item.name}-{item.done.toString()}</p>
       </div>
     </>
   );

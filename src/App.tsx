@@ -25,16 +25,17 @@ function App() {
 
    const handleRemoveItem = (item: Item) => {
   // alert("Remove item")
-  //  console.log(item.name)
-  console.log(list.splice( item.id, 1))
-  //  setList(valor)
+   console.log(item.id)
+   const selectedItem =  item.id
+   let newArr = list.filter(item => item.id !== selectedItem)//aqui eu filtro o array deixando só 
+
+   setList(newArr); 
+
+
 
      };
 
-  //   const handleRemoveItem = () => {
-  // alert("Remove item")
-   
-  //    };
+  
   
  
 
@@ -72,14 +73,7 @@ function App() {
           
           </div>
         ))}
-         {/* {/* {console.log(list.map((item) => (
-          <div style={{ display: "flex", alignItems: "center", width: "100%"}}>
-            <ListItem item={item}  />
-            <FaTrashAlt style={{marginLeft: '10px', fontSize: '30px', color: '#cd3939', cursor: 'pointer'}}  />
-           
-          
-          </div> 
-        )))} */}
+       
       
       
       </div>
