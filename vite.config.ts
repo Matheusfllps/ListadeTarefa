@@ -11,6 +11,6 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/ListadeTarefa/', // Substitua isso pelo nome do repositório onde seu site está hospedado
+  base: '/ListadeTarefa', // Substitua isso pelo nome do repositório onde seu site está hospedado
 });
 
